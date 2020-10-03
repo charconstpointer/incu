@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BroadcastMonitor>
+    <updated>2020-10-02T14:03:04.874</updated>
+    <stationName>Radio Kierowcow</stationName>
+    <Current>
+        <startTime>2020-10-02T14:03:03.289</startTime>
+        <itemId>3070199:1007192857:58807909</itemId>
+        <titleId>71082</titleId>
+        <itemCode>PROD76505</itemCode>
+        <Reference/>
+        <titleName>Zawsze tam gdzie ty</titleName>
+        <artistName>LADY PANK</artistName>
+        <Author></Author>
+        <albumName></albumName>
+        <Label>Pomaton</Label>
+        <Year>1990</Year>
+        <itemDuration>255</itemDuration>
+        <itemDurationMS>255648</itemDurationMS>
+        <CategoryId>12122</CategoryId>
+        <CategoryCode/>
+        <CategoryName>L</CategoryName>
+        <CategoryShortName>L</CategoryShortName>
+        <CategoryLongName>L</CategoryLongName>
+        <CategoryFullName>CATEGORIES/Muzyka baza alfabetyczna/L</CategoryFullName>
+        <SoundFileName>\\DPCLU2_m\Storage$\MUZIKA_SFU01\0001161A.wav</SoundFileName>
+        <Comment1/>
+        <Interface>MUSIC</Interface>
+        <PR_Autor>Skubikowski Jacek</PR_Autor>
+        <PR_Kompozytor>Borysewicz Jan</PR_Kompozytor>
+        <PR_PochodzenieWykonawcy>Polska</PR_PochodzenieWykonawcy>
+        <PR_RodzajUtworuMuz>Piosenka</PR_RodzajUtworuMuz>
+        <PR_Wykonawca_ZAIKS>Lady Pank</PR_Wykonawca_ZAIKS>
+        <PR_wykorzystany_utwor>[Tytul] ; [Czas] min:sek ; [Wykonawca]* ; [Autor]* ; [Producent] ; [Rok produkcji] ; [pl/eu/zagr] ; [rodzaj] ; [kompozytor]* ; [orkiestra]* ; [dyrygent]* ; [opracowanie muzyczne]* ; [adaptator]* ; [tlumacz]* ; [rezyser]* ; [rezyser dzwieku]* ;</PR_wykorzystany_utwor>
+        <Transfer_Reporting>2015-05-06T17:08:31.000 Export-wachnicki Export \\w0102245d\pol.top_001$ 77e5cbff-c596-4666-960a-d945728ca0bf OK</Transfer_Reporting>
+        <Transfer_Reporting>2015-07-30T15:43:09.000 Export-wachnicki Export \\W0101647D\top pl_001$ 77e5cbff-c596-4666-960a-d945728ca0bf OK</Transfer_Reporting>
+        <Transfer_Reporting>2016-11-30T12:36:50.000 85 Stacji___NOTIFICATION___2016-11-30T12:36:47.031 Export \\GS\GS$ 77e5cbff-c596-4666-960a-d945728ca0bf OK</Transfer_Reporting>
+        <Transfer_Reporting>2017-06-06T17:19:00.000 85 Stacji___NOTIFICATION___2017-06-06T17:18:57.233___VIRTUAL___1 Export \\GS\GS$ 77e5cbff-c596-4666-960a-d945728ca0bf OK</Transfer_Reporting>
+        <Transfer_Reporting>2017-06-20T13:47:30.000 Export-r7 Export \\S0101194D\Export_001$ 77e5cbff-c596-4666-960a-d945728ca0bf OK</Transfer_Reporting>
+        <Transfer_Reporting>2019-02-12T13:02:45.000 Export-r7 Export \\S0101194D\Export_001$ 77e5cbff-c596-4666-960a-d945728ca0bf OK</Transfer_Reporting>
+        <PR_UtworWJezykuPolskim>1</PR_UtworWJezykuPolskim>
+        <image>20066885</image>
+        <image_title>Lady Pank - Zawsze Tam Gdzie Ty</image_title>
+        <image_file>\\dpclu2_o\DPShare$\Storage\Images\0140f1f0.jpg</image_file>
+        <AiredStartTime>2014-06-08T01:55:55</AiredStartTime>
+    </Current>
+    <Next>
+        <startTime>2020-10-02T14:07:18.944</startTime>
+        <itemId>3070199:1007192857:58807910</itemId>
+        <titleId>16851178</titleId>
+        <itemCode>PROD16667058</itemCode>
+        <Reference/>
+        <titleName>Ciągle pada</titleName>
+        <artistName>LIZAR</artistName>
+        <Author></Author>
+        <albumName></albumName>
+        <Label>Sony Music Ent.</Label>
+        <Year>1997</Year>
+        <itemDuration>193</itemDuration>
+        <itemDurationMS>193104</itemDurationMS>
+        <CategoryId>62496</CategoryId>
+        <CategoryCode/>
+        <CategoryName>1</CategoryName>
+        <CategoryShortName>1</CategoryShortName>
+        <CategoryLongName>1</CategoryLongName>
+        <CategoryFullName>CATEGORIES/1 Program/Muzyka/K. Nowicki/ROTACJA 2018/2018 ROCK/Selector Rock/1</CategoryFullName>
+        <SoundFileName>\\dpclu2_T\storage_t$\PR1_T\010d4ae1.wav</SoundFileName>
+        <Comment1/>
+        <Interface>STANDARD</Interface>
+        <PR_Autor>Dzikowski Krzysztof</PR_Autor>
+        <PR_Kompozytor>Krajewski Seweryn</PR_Kompozytor>
+        <PR_PochodzenieWykonawcy>Polska</PR_PochodzenieWykonawcy>
+        <PR_RodzajUtworuMuz>Piosenka</PR_RodzajUtworuMuz>
+        <PR_Wykonawca_ZAIKS>Lizar</PR_Wykonawca_ZAIKS>
+        <PR_wykorzystany_utwor>[Tytul] ; [Czas] min:sek ; [Wykonawca] ; [Autor] ; [Producent] ; [Rok produkcji] ; [pl/eu/zagr] ; [rodzaj] ; [kompozytor] ; [orkiestra] ; [dyrygent] ; [opracowanie muzyczne] ; [adaptator] ; [tlumacz] ; [rezyser] ; [rezyser dzwieku] ;</PR_wykorzystany_utwor>
+        <Transfer_Reporting>2017-02-21T12:57:39.000 Export-r3 Export \\S0101196D\Export_001$ 43697dff-cf1c-4fe0-8c61-835da141ea45 OK</Transfer_Reporting>
+        <Transfer_Reporting>2018-12-18T14:38:28.000 85 Stacji___NOTIFICATION___2018-12-18T14:38:24.618 Export \\GS\GS$ 597d8ca1-40fe-4bd3-8300-3a70214aabc5 OK</Transfer_Reporting>
+        <Transfer_Reporting>2020-09-28T03:25:05.000 85 Stacji___NOTIFICATION___2020-09-28T03:25:03.208 Export \\GS\GS$ 597d8ca1-40fe-4bd3-8300-3a70214aabc5 OK</Transfer_Reporting>
+        <PR_UtworWJezykuPolskim>1</PR_UtworWJezykuPolskim>
+        <AiredStartTime>2018-12-24T07:51:08</AiredStartTime>
+    </Next>
+</BroadcastMonitor>
