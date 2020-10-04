@@ -8,7 +8,7 @@ import (
 
 func TestBucketSave(t *testing.T) {
 	b := dalet.NewMockBucket()
-	c := dalet.Current{
+	c := dalet.Track{
 		Author: "author",
 	}
 	b.Save(context.Background(), c)
@@ -16,7 +16,7 @@ func TestBucketSave(t *testing.T) {
 	if got != c {
 		t.Errorf("Expeced %v, got %v", c, b)
 	}
-	c = dalet.Current{
+	c = dalet.Track{
 		Author: "author2",
 	}
 	b.Save(context.Background(), c)

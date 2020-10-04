@@ -4,10 +4,10 @@ import "encoding/xml"
 
 type BroadcastMonitor struct {
 	XMLName xml.Name `xml:"BroadcastMonitor"`
-	Current Current  `xml:"Current"`
+	Current Track    `xml:"Current"`
 }
 
-type Current struct {
+type Track struct {
 	XMLName   xml.Name `xml:"Current"`
 	StartTime string   `xml:"startTime"`
 	Title     string   `xml:"titleName"`

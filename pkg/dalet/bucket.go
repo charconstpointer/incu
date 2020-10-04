@@ -8,7 +8,7 @@ import (
 )
 
 type Bucket interface {
-	Save(ctx context.Context, c Current) error
+	Save(ctx context.Context, c Track) error
 }
 
 type RedisBucket struct {
@@ -21,25 +21,25 @@ func NewRedisBucket(c *redis.Client) *RedisBucket {
 	}
 }
 
-func (b *RedisBucket) Save(ctx context.Context, c Current) error {
+func (b *RedisBucket) Save(ctx context.Context, c Track) error {
 	err := b.conn.Set(ctx, "key", "value", 0).Err()
 	return err
 }
 
 type MockBucket struct {
-	head Current
+	head Track
 }
 
 func NewMockBucket() *MockBucket {
 	return &MockBucket{}
 }
 
-func (b *MockBucket) Save(ctx context.Context, c Current) error {
+func (b *MockBucket) Save(ctx context.Context, c Track) error {
 	log.Printf("bucket => %s", c.Title)
 	b.head = c
 	return nil
 }
 
-func (b *MockBucket) Head() Current {
+func (b *MockBucket) Head() Track {
 	return b.head
 }
