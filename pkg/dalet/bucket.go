@@ -27,6 +27,7 @@ func (b *RedisBucket) Save(ctx context.Context, c Current) error {
 }
 
 type MockBucket struct {
+	head Current
 }
 
 func NewMockBucket() *MockBucket {
@@ -35,5 +36,10 @@ func NewMockBucket() *MockBucket {
 
 func (b *MockBucket) Save(ctx context.Context, c Current) error {
 	log.Printf("bucket => %s", c.Title)
+	b.head = c
 	return nil
+}
+
+func (b *MockBucket) Head() Current {
+	return b.head
 }
