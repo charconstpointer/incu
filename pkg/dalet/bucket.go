@@ -15,9 +15,14 @@ type RedisBucket struct {
 	conn *redis.Client
 }
 
-func NewRedisBucket(c *redis.Client) *RedisBucket {
+func NewRedisBucket(connString string) *RedisBucket {
+	rdb := redis.NewClient(&redis.Options{
+		Addr:     connString,
+		Password: "",
+		DB:       0,
+	})
 	return &RedisBucket{
-		conn: c,
+		conn: rdb,
 	}
 }
 

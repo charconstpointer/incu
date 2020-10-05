@@ -1,8 +1,10 @@
 package main
 
 import (
+	"context"
 	"flag"
 	"incu/pkg/dalet"
+	"time"
 )
 
 var (
@@ -11,19 +13,18 @@ var (
 
 func main() {
 	flag.Parse()
-	bucket := dalet.NewMockBucket()
+	//inmem
+	mb := dalet.NewMockBucket()
+	//redis
+	_ = dalet.NewRedisBucket(*redisConn)
 
-	source := dalet.NewNetworkSource("https://google.com")
-	// source := dalet.NewStaticSource("./dalet.xml")
-	w := dalet.NewWatcher(source, bucket)
-	w.Start()
+	//network
+	_ = dalet.NewNetworkSource("https://google.com")
+	//static
+	source := dalet.NewStaticSource("./dalet.xml")
 
-	// // rdb := redis.NewClient(&redis.Options{
-	// // 	Addr:     *redisConn,
-	// // 	Password: "",
-	// // 	DB:       0,
-	// // })
-
-	// // bucket := dalet.NewRedisBucket(rdb)
+	w := dalet.NewWatcher(source, mb)
+	ctx, _ := context.WithTimeout(context.Background(), 2*time.Second)
+	w.Start(ctx)
 
 }
