@@ -12,6 +12,7 @@ type Watcher struct {
 	source Source
 	bucket Bucket
 	Bm     BroadcastMonitor
+	hash   [32]byte
 }
 
 func NewWatcher(s Source, b Bucket) *Watcher {
@@ -33,7 +34,7 @@ func (w *Watcher) process(c context.Context) {
 	for {
 		select {
 		case <-c.Done():
-			fmt.Printf("Done\n")
+			log.Println("Done")
 			break
 		default:
 			t, err := w.source.GetTrack()
@@ -42,6 +43,7 @@ func (w *Watcher) process(c context.Context) {
 				time.Sleep(1 * time.Minute)
 				continue
 			}
+
 			d := xml.NewDecoder(t)
 			err = d.Decode(&w.Bm)
 			if err != nil {
@@ -60,8 +62,12 @@ func (w *Watcher) process(c context.Context) {
 			}
 			dur := time.Duration(w.Bm.Current.Duration) * time.Millisecond
 			end := date.Add(dur)
-			fmt.Println("ends", end)
+
 			sleepFor := end.Sub(time.Now())
+			if sleepFor < 0 {
+				time.Sleep(1 * time.Minute)
+				continue
+			}
 			log.Println("sleep for ", sleepFor)
 			time.Sleep(sleepFor)
 		}
